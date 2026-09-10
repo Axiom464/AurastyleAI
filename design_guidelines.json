@@ -1,0 +1,97 @@
+{
+  "theme": {
+    "archetype": "ARCHETYPE 7: ELECTRIC & NEON / DARK LUXURY CYBER-HUD",
+    "mode": "dark",
+    "colors": {
+      "background": "#090d0b",
+      "surface": "#0f1713",
+      "surfaceGlass": "rgba(15, 23, 19, 0.75)",
+      "border": "rgba(16, 185, 129, 0.2)",
+      "borderHover": "rgba(16, 185, 129, 0.5)",
+      "emeraldNeon": "#10b981",
+      "emeraldGlow": "rgba(16, 185, 129, 0.4)",
+      "cyberCyan": "#06b6d4",
+      "warningAmber": "#f59e0b",
+      "textPrimary": "#f0fdf4",
+      "textSecondary": "#94a3b8",
+      "textMuted": "#64748b"
+    }
+  },
+  "typography": {
+    "fontFamilyHeading": "Orbitron, Space Grotesk, sans-serif",
+    "fontFamilyBody": "Inter, JetBrains Mono, sans-serif",
+    "fontFamilyMono": "JetBrains Mono, monospace",
+    "hierarchy": {
+      "heroHeading": "text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight",
+      "sectionTitle": "text-xl sm:text-2xl font-bold tracking-tight text-emerald-400",
+      "cardHeader": "text-lg font-semibold text-emerald-300",
+      "bodyText": "text-sm text-slate-300 leading-relaxed",
+      "terminalLog": "text-xs font-mono text-emerald-400/90 leading-tight"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-slate-950/80 border border-emerald-500/20 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "emeraldGlowFilter": "drop-shadow-[0_0_12px_rgba(16,185,129,0.5)]",
+    "scanLaserOverlay": "bg-gradient-to-b from-transparent via-emerald-500/60 to-transparent shadow-[0_0_20px_#10b981]",
+    "hudBorderCorner": "relative before:absolute before:top-0 before:left-0 before:w-2 before:h-2 before:border-t-2 before:border-l-2 before:border-emerald-500",
+    "gridPatternBg": "radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.05) 0%, transparent 80%)"
+  },
+  "layout_architecture": {
+    "gridStructure": "grid grid-cols-1 lg:grid-cols-12 gap-6 p-4 sm:p-6 max-w-[1800px] mx-auto",
+    "column1Scanner": "lg:col-span-4 xl:col-span-4 flex flex-col gap-6",
+    "column2Matrix": "lg:col-span-8 xl:col-span-8 flex flex-col gap-6",
+    "terminalBottom": "col-span-full mt-4"
+  },
+  "key_components": [
+    {
+      "name": "Live Camera Ingestion Viewfinder & Facial HUD",
+      "file": "src/App.jsx",
+      "features": [
+        "Native navigator.mediaDevices.getUserMedia HTML5 video stream",
+        "EXECUTE IMAGE SCAN button triggers 2.5s emerald neon laser overlay pulse and video freeze frame simulation",
+        "Real-time Facial Geometry Landmark HUD overlay (Face shape: Oval/Square/Heart/Round, Undertone temperature, Jawline angularity, Symmetry ratio)",
+        "Skin (3), Body (3), Hair (4), Face (4) interactive neural profile modifier sliders and selectors"
+      ]
+    },
+    {
+      "name": "Procedural 144+ Outfit Matrix Engine",
+      "file": "src/App.jsx",
+      "features": [
+        "36 base profiles scaled to 144+ procedural look payload variations",
+        "Cultural & Category Switcher: Indian (Kurta, Sherwani, Lehenga, Saree, Indo-Western Fusion) & Western (Streetwear, Luxury, Smart Casual, Tailored Evening)",
+        "Gender catalog toggle: Male vs Female separate catalog views with tailored metrics",
+        "5-Piece itemized breakdowns: Top, Bottom, Footwear drop, Eyewear, Wristwear with curated high-res imagery & color theory palettes",
+        "Interactive accessory & grooming engine with dynamic tailored recommendations based on detected face shape"
+      ]
+    },
+    {
+      "name": "Asynchronous Telemetry Stream Terminal",
+      "file": "src/App.jsx",
+      "features": [
+        "Real-time asynchronous line-by-line typing effect tracing logs",
+        "Triggers automatically on camera scan or profile modifier change",
+        "Status logs: Hardware verification, Matrix index vector compilation, Vector Knowledge Base search, Structural constraint filters, Output compliance push",
+        "Wardrobe Exporter & Lookbook Bookmark functionality"
+      ]
+    }
+  ],
+  "image_urls": {
+    "indian_menswear": [
+      "https://images.unsplash.com/photo-1522169092203-1cce6d311a0b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtZW5zd2VhciUyMGx1eHVyeSUyMGt1cnRhJTIwc2hlcndhbml8ZW58MHx8fHwxNzg5MDEyNDgwfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1781106784325-52bc05c289aa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBtZW5zd2VhciUyMGx1eHVyeSUyMGt1cnRhJTIwc2hlcndhbml8ZW58MHx8fHwxNzg5MDEyNDgwfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1783188223126-69e5d0b56f39?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBtZW5zd2VhciUyMGx1eHVyeSUyMGt1cnRhJTIwc2hlcndhbml8ZW58MHx8fHwxNzg5MDEyNDgwfDA&ixlib=rb-4.1.0&q=85"
+    ],
+    "indian_womenswear": [
+      "https://images.unsplash.com/photo-1677691257005-9d69ab23f485?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjB3b21lbnN3ZWFyJTIwc2FyZWUlMjBsZWhlbmdhfGVufDB8fHx8MTc4OTAxMjQ4MHww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1654764746225-e63f5e90facd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjB3b21lbnN3ZWFyJTIwc2FyZWUlMjBsZWhlbmdhfGVufDB8fHx8MTc4OTAxMjQ4MHww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1668371459824-094a960a227d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjB3b21lbnN3ZWFyJTIwc2FyZWUlMjBsZWhlbmdhfGVufDB8fHx8MTc4OTAxMjQ4MHww&ixlib=rb-4.1.0&q=85"
+    ],
+    "western_luxury_streetwear": [
+      "https://images.unsplash.com/photo-1532332248682-206cc786359f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxtZW5zd2VhciUyMGx1eHVyeSUyMHN0cmVldHdlYXIlMjBvdXRmaXR8ZW58MHx8fHwxNzg5MDEyNDgwfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1620834767673-19f69709a716?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHw0fHxtZW5zd2VhciUyMGx1eHVyeSUyMHN0cmVldHdlYXIlMjBvdXRmaXR8ZW58MHx8fHwxNzg5MDEyNDgwfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1559697242-a465f2578a95?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxtZW5zd2VhciUyMGx1eHVyeSUyMHN0cmVldHdlYXIlMjBvdXRmaXR8ZW58MHx8fHwxNzg5MDEyNDgwfDA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "instructions_to_main_agent": "Ensure App.jsx implements native HTML5 navigator.mediaDevices.getUserMedia webcam video streaming, 2.5s scan laser overlay, 144+ procedural look lookup matrix engine, male and female catalog distinction, Indian and Western categories, dynamic face landmark HUD detection overlay, line-by-line asynchronous typing terminal logs, and data-testid attributes on all interactive elements.",
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": "Follow APCA contrast rules, ensure responsive mobile-first layouts, attach data-testid attributes to buttons, selects, and cards, and strictly use dark emerald obsidian glassmorphism aesthetics with drop-shadow aura filters."
+}
